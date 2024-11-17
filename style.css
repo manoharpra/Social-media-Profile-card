@@ -1,0 +1,153 @@
+
+body{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    
+
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 475px;
+    width: 100%;
+    background-color: grey;
+    box-shadow: 0 9px 15px #d3ed0b;
+    border-radius: 25px;
+    padding: 23px;
+    position: relative;
+
+}
+
+.profile-card::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    background-color: #4070f4;
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: pink;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0px solid blue;
+    
+}
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-data .name{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.text-data .job{
+    font-size: 15px;
+    font-weight: 600;
+    font-variant: inherit;
+}
+.profile-card .media-buttons {
+   
+    padding: 0px;
+    margin-left: 15px;
+    margin-top: 15px;
+    rotate: 180;
+    display: flex;
+    align-items: center;
+
+}
+.media-buttons .links{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 25px;
+    height: 34px;
+    width: 44px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #5def9a;
+    text-decoration: none;
+    margin: 0 8px;
+    
+
+}
+
+.profile-card .buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;   
+
+}
+.buttons .button {
+    background-color: royalblue;
+    border-radius: 25px;
+    font-size: 15px;
+    margin: 0 8px;
+    padding: 6px 20px;
+    font-weight: 550;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.buttons .button1 {
+    background-color: royalblue;
+    border-radius: 25px;
+    font-size: 15px;
+    margin: 0 8px;
+    padding: 6px 20px;
+    font-weight: 550;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.buttons .button:hover{
+    background-color: rgb(247, 60, 18);
+}
+
+.buttons .button1:hover{
+    background-color: #0cef6a;
+}
+
+.profile-card .analyics{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.analyics .data {
+    display: flex;
+    color: #333;
+    padding: 0 20px;
+    border-right: 3px solid #a48a8a;
+}
+.data i {
+    font-size: 18px;
+    margin-right: 6px;
+
+}
+
+.data:last-child {
+    border-right: none;
+}
